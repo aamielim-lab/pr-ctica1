@@ -6,13 +6,66 @@
     <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<style> 
+    body { margin: 0;
+      background-color: black } 
+.video-fondo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.navbar {
+  color:black;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.container1 {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+}
+.container1 div {
+  background-color: white;
+  padding: 10px;
+}
+.container1 div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container1 div.menu {
+  grid-area: menu;
+}
+.container1 div.content {
+  grid-area: content;
+}
+.container1 div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+</style>
+    
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
+
+
+
+        <!-- Navbar -->
+    
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">GLITCH FESTIVAL</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,17 +75,18 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Programación</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+
+            Tickets
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Primer día</a></li>
+            <li><a class="dropdown-item" href="#">Segundo día</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Bonos</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -48,19 +102,39 @@
 </nav>
     </nav>
 
+    
+<video class="video-fondo" autoplay muted loop playsinline>
+  <source src="media/video-fondo.mp4" type="video/mp4">
+ 
+</video>
+
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      Column
+      Cine
     </div>
     <div class="col">
-      Column
+      Artistas
     </div>
     <div class="col">
-      Column
+      Contacto
+
     </div>
   </div>
 </div>
+
+<h1> About us</h1>
+
+
+<div class="container1">
+  <div class="header"><h2>My Header</h2></div>
+  <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
+  <div class="content"><h3>Lorem Ipsum</h3><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer magnis ligula lobortis quam ut.</p></div>
+  <div class="footer"><h4>Footer</h4></div>
+</div>
+
+<p>CONTACTE NOS</p>
+<p>The Grid Layout Module makes it easy to design complex and responsive web pages without using floats and positioning:</p>
 
    <script src="js/bootstrap.bundle.min.js"></script> 
 </body>
